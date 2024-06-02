@@ -8,9 +8,9 @@ services:
       - 8081:5000
     container_name: python-container
     networks:
-      - py-network
+      - py-networks
     volumes:
-      - py_vol:/app
+      - /home/sd/mypython-vol:/mypython-vol
 networks:
   py-networks:
     driver: bridge
