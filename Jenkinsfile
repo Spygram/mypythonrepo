@@ -17,7 +17,8 @@ pipeline {
         stage("Build PythonApp") {
             steps {
                 script {
-                     sh 'docker build -t $PYTHON_IMAGE:$IMAGE_TAG .'
+                    # sh 'docker build -t $PYTHON_IMAGE:$IMAGE_TAG .'
+			sh 'docker compose up -d --build'
 		}
             }
         }
