@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id')
-        PYTHON_MAGE = 'spygram/python-image'
+        PYTHON_IMAGE = 'spygram/python-image'
         IMAGE_TAG = 'latest'
     }
     
